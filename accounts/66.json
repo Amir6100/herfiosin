@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "spongebob-333520",
+  "private_key_id": "af929d30ddcfaf636d1c6a7a06767851f234a0ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjTTi0DvpEalyD\nA5pR5oK8FhMiF4gRcgCUjY7myMG6pUG7AONwy4Upd9YS6gDpO4HLsldNtMdmQKQb\nJERrB7Esv0Cdn/bqBCozDI9V+Pb0Vx+50AqMSYUWH7HWXogLtlQJGJ9pP3mOPwr5\nftkuPrsVmobhqmViVeh7I1PeKZKRQZULNngCUpx1sqDAvkD6K3JpWVNf2Sk4Oo7d\nZWO9WA7NkALa5kCO+/qbS9tHv71TSRF1dbE+d46gl6Q1/Q7falYxxxUyfTwI0tx3\nEmxQfGM/SfbxNdt/tvjErHgBQH6oUqYKnQxJ0VdjLGBMYWsZqfo8k2+91bfeBBN9\n9t74gg0NAgMBAAECggEAAvM5KADfaIzZydLungxUUdDaWnvcpLXKi6qRQ8SZnxYO\n8Fai2UuwkdCBxDBfMi9GH0fb3YLK6WGKGhLnIk5eE0GpJFOGd7KbUSKI1QI7nZg7\naeLpHkEAYHypSu3L3jsMC7MeWOU7p1rbhhPONr4HVbKQNKd5vZ6jHRnKZZNKq+4N\nHWQWtFkiUTTax/9/snK8Jsq/Jg2eSeh3hF5LpDMPfSvtwAUU2P6/UnR2kix34qnf\na8SDcgs83n7HVCu78o81btBX4Xt2Rm43ft4z3IBIBFS1m/VDc0zNhiNZeVT3r/7t\nf8ruyxuNpAUH/F2aBELgXrCYJOER8YuyJQzh/aEdkQKBgQD+4ICk80UC/5CvEU8/\nKmRS2Ze7WGfN54v1yt2jFUWCqGPQVJj69/BqEX0eGm1XluRB0USp2dN9nFVPcMX2\nkiqN2W7SrVzn0oDvFMn+cb2rQxbZySWWdFpDugH6hF1gKwOoFwSf5hC83arqPxZn\nbJ5iQbRVMxAv77lTiDK8B53ujwKBgQDkTZ1LGiYmP1uXkCelPFClA98/jTIoHbcF\nYcthAxuQZSc18HPjhazuAfnpR+I+DpPp6ogWD7QvgzJYIbMhB62xASGg71XwW8Z6\nMZ3uuHYeM24WFiHeVUnnyAxnZo2xAE9kT888VCy6F6UUeM9KNvBH+25chig/sK8w\neX5RNO5YowKBgAZjxHXeL2260HrDGVSBEJDPKbGlrryHwIeB9XqALwTuicoQROGN\n07YlCBj4GqOmgcRwpaMIdffhMnZSYnQjB/QUbmXTuM+LBHZ58/JwEYw4m1sMYufZ\ntOWbxS7toJWnnmjZYuFLWEIT4JQMztf67iGSeh3ksNQy01eXw4XZPwlbAoGAbhdr\nWVLzwI/e6BhwtcJ/FQPn/OpmnGev4R2GiHKKMThGD0GzcKz+dgtn6vFqDQjUlQEu\nvIy4FA1NEqi1i6D7RhbIk6W2KGDpNfWFNh+nferJFEd574/rQqT6LkaK3ybKIhJG\nWc4xf091oIidVSlm9x8s2dsrv4LBCDweCKTgpscCgYEA4AZJ9KAQFY0XQtG0Q0LL\n6bBMHV4JfYuDeHq322UrSixs/AuhDiEgqdLmOGni7B5XhgiiOjn3R1VkNF6bwrw1\nCNdXueYl18cbSkyuMJy3oM71mQYZ33NxM0YpAq9V3UdYpxyZe7XbLW5jX17MtBgB\nPWVZCeVvS9DaOlSQgIlapCY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mfc-qer-5o2dzjq4cxyuc3w9fsvz8m@spongebob-333520.iam.gserviceaccount.com",
+  "client_id": "103161311528891313505",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mfc-qer-5o2dzjq4cxyuc3w9fsvz8m%40spongebob-333520.iam.gserviceaccount.com"
+}
