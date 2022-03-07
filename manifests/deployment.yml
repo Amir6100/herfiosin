@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "fisionbot-7711"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "fisionbot-7711"
+  template:
+    metadata:
+      labels:
+        app: "fisionbot-7711"
+    spec:
+      containers:
+        - name: "fisionbot-7711"
+          image: "fisionbot.azurecr.io/fisionbot"
+          ports:
+          - containerPort: 80
