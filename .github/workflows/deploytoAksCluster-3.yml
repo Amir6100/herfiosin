@@ -1,0 +1,50 @@
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - uses: azure/docker-login@v1
+      with:
+        login-server: fisionbot.azurecr.io
+        username: ${{ secrets.acr_fisionbot_username }}
+        password: ${{ secrets.acr_fisionbot_password }}
+    
+    - name: Build and push image to ACR
+      id: build-image
+      run: |
+        docker build "$GITHUB_WORKSPACE/" -f  "Dockerfile" -t fisionbot.azurecr.io/powegroup:${{ github.sha }} --label dockerfile-path=Dockerfile
+        docker push fisionbot.azurecr.io/powegroup:${{ github.sha }}
+    
+    - uses: azure/k8s-set-context@v1
+      with:
+         kubeconfig: ${{ secrets.aks_powegroup_kubeConfig }}
+      id: login
+    
+    - name: Create namespace
+      run: |
+        namespacePresent=`kubectl get namespace | grep powe_group9e5c | wc -l`
+        if [ $namespacePresent -eq 0 ]
+        then
+            echo `kubectl create namespace powe_group9e5c`
+        fi
+
+    - uses: azure/k8s-create-secret@v1
+      with:
+        namespace: powe_group9e5c
+        container-registry-url: fisionbot.azurecr.io
+        container-registry-username: ${{ secrets.acr_fisionbot_username }}
+        container-registry-password: ${{ secrets.acr_fisionbot_password }}
+        secret-name: powegroupdockerauth
+       
+    - uses: azure/k8s-deploy@v1.2
+      with:
+        namespace: powe_group9e5c
+        manifests: |
+          manifests/deployment-3.yml
+          manifests/service-3.yml
+        images: |
+          fisionbot.azurecr.io/powegroup:${{ github.sha }}
+        imagepullsecrets: |
+          powegroupdockerauth
