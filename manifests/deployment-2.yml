@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "powegroup-ec11"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "powegroup-ec11"
+  template:
+    metadata:
+      labels:
+        app: "powegroup-ec11"
+    spec:
+      containers:
+        - name: "powegroup-ec11"
+          image: "power582.azurecr.io/powegroup"
+          ports:
+          - containerPort: 80
