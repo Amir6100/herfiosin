@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "amola-a49c"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "amola-a49c"
+  template:
+    metadata:
+      labels:
+        app: "amola-a49c"
+    spec:
+      containers:
+        - name: "amola-a49c"
+          image: "sandisa.azurecr.io/amola"
+          ports:
+          - containerPort: 80
