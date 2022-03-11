@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "lomania-599e"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "lomania-599e"
+  template:
+    metadata:
+      labels:
+        app: "lomania-599e"
+    spec:
+      containers:
+        - name: "lomania-599e"
+          image: "limonia.azurecr.io/lomania"
+          ports:
+          - containerPort: 80
