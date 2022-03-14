@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "lomanie-5959"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "lomanie-5959"
+  template:
+    metadata:
+      labels:
+        app: "lomanie-5959"
+    spec:
+      containers:
+        - name: "lomanie-5959"
+          image: "amirlicsy6.azurecr.io/lomanie"
+          ports:
+          - containerPort: 80
