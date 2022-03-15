@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "amolia-59b2"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "amolia-59b2"
+  template:
+    metadata:
+      labels:
+        app: "amolia-59b2"
+    spec:
+      containers:
+        - name: "amolia-59b2"
+          image: "milioa.azurecr.io/amolia"
+          ports:
+          - containerPort: 80
